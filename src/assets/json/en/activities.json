@@ -1,0 +1,776 @@
+[
+    {
+        "id": 100,
+        "type": "Health",
+        "name": "Rise and shine",
+        "image": "ic_rise_shine"
+    },
+    {
+        "id": 101,
+        "type": "Health",
+        "name": "Not feeling well",
+        "image": "ic_see_doctor"
+    },
+    {
+        "id": 102,
+        "type": "Health",
+        "name": "Got sick",
+        "image": "ic_got_sick"
+    },
+    {
+        "id": 200,
+        "type": "Relationship",
+        "name": "Family time",
+        "image": "ic_family_time"
+    },
+    {
+        "id": 201,
+        "type": "Relationship",
+        "name": "Got a date",
+        "image": "ic_have_date"
+    },
+    {
+        "id": 202,
+        "type": "Relationship",
+        "name": "Party party",
+        "image": "ic_party_party"
+    },
+    {
+        "id": 203,
+        "type": "Relationship",
+        "name": "Alone today",
+        "image": "ic_feel_lonely"
+    },
+    {
+        "id": 204,
+        "type": "Relationship",
+        "name": "Heartbreak",
+        "image": "ic_heartbroken"
+    },
+    {
+        "id": 205,
+        "type": "Relationship",
+        "name": "Date gone wrong",
+        "image": "ic_date_gone_wrong"
+    },
+    {
+        "id": 206,
+        "type": "Relationship",
+        "name": "No party",
+        "image": "ic_no_party"
+    },
+    {
+        "id": 301,
+        "type": "Work & study",
+        "name": "Accomplished",
+        "image": "ic_accomplished"
+    },
+    {
+        "id": 302,
+        "type": "Work & study",
+        "name": "Tasks done",
+        "image": "ic_tasks_done"
+    },
+    {
+        "id": 303,
+        "type": "Work & study",
+        "name": "Meet deadline",
+        "image": "ic_meet_deadline"
+    },
+    {
+        "id": 304,
+        "type": "Work & study",
+        "name": "Passed",
+        "image": "ic_passed"
+    },
+    {
+        "id": 305,
+        "type": "Work & study",
+        "name": "Useless day",
+        "image": "ic_useless_day"
+    },
+    {
+        "id": 306,
+        "type": "Work & study",
+        "name": "Work overtime",
+        "image": "ic_work_overtime"
+    },
+    {
+        "id": 307,
+        "type": "Work & study",
+        "name": "Not passed",
+        "image": "ic_not_passed"
+    },
+    {
+        "id": 308,
+        "type": "Work & study",
+        "name": "Too busy",
+        "image": "ic_busy_day"
+    },
+    {
+        "id": 319,
+        "type": "Work & study",
+        "name": "Missed deadline",
+        "image": "ic_missed_deadline"
+    },
+    {
+        "id": 400,
+        "type": "Activities",
+        "name": "Exercise",
+        "image": "ic_exercise"
+    },
+    {
+        "id": 401,
+        "type": "Activities",
+        "name": "I won",
+        "image": "ic_win_game"
+    },
+    {
+        "id": 402,
+        "type": "Activities",
+        "name": "Shopping",
+        "image": "ic_shopping"
+    },
+    {
+        "id": 403,
+        "type": "Activities",
+        "name": "Free day",
+        "image": "ic_free_day"
+    },
+    {
+        "id": 404,
+        "type": "Activities",
+        "name": "Travelling",
+        "image": "ic_travelling"
+    },
+    {
+        "id": 405,
+        "type": "Activities",
+        "name": "Wonderful trip",
+        "image": "ic_wonderful_trip"
+    },
+    {
+        "id": 406,
+        "type": "Activities",
+        "name": "Safe & sound",
+        "image": "ic_safe_trip"
+    },
+    {
+        "id": 407,
+        "type": "Activities",
+        "name": "Good food",
+        "image": "ic_good_meal"
+    },
+    {
+        "id": 408,
+        "type": "Activities",
+        "name": "Good reading",
+        "image": "ic_good_reading"
+    },
+    {
+        "id": 409,
+        "type": "Activities",
+        "name": "New hobby",
+        "image": "ic_new_hobby"
+    },
+    {
+        "id": 410,
+        "type": "Activities",
+        "name": "Good sleep",
+        "image": "ic_good_sleep"
+    },
+    {
+        "id": 411,
+        "type": "Activities",
+        "name": "Go as planned",
+        "image": "ic_go_as_planned"
+    },
+    {
+        "id": 412,
+        "type": "Activities",
+        "name": "No exercise",
+        "image": "ic_no_exercise"
+    },
+    {
+        "id": 413,
+        "type": "Activities",
+        "name": "Boring trip",
+        "image": "ic_boring_trip"
+    },
+    {
+        "id": 414,
+        "type": "Activities",
+        "name": "Boring book",
+        "image": "ic_boring_book"
+    },
+    {
+        "id": 415,
+        "type": "Activities",
+        "name": "Plan canceled",
+        "image": "ic_plan_canceled"
+    },
+    {
+        "id": 416,
+        "type": "Activities",
+        "name": "A loser",
+        "image": "ic_loose_game"
+    },
+    {
+        "id": 417,
+        "type": "Activities",
+        "name": "Lost money",
+        "image": "ic_money_spent"
+    },
+    {
+        "id": 418,
+        "type": "Activities",
+        "name": "Lost my way",
+        "image": "ic_get_lost "
+    },
+    {
+        "id": 419,
+        "type": "Activities",
+        "name": "Injured",
+        "image": "ic_small_injury"
+    },
+    {
+        "id": 420,
+        "type": "Activities",
+        "name": "Bad food",
+        "image": "ic_bad_food"
+    },
+    {
+        "id": 421,
+        "type": "Activities",
+        "name": "Nothing to do",
+        "image": "ic_nothing_to_do"
+    },
+    {
+        "id": 422,
+        "type": "Activities",
+        "name": "Lack of sleep",
+        "image": "ic_lack_of_sleep"
+    },
+    {
+        "id": 425,
+        "type": "Activities",
+        "name": "Got into accident",
+        "image": "ic_got_into_accident"
+    },
+    {
+        "id": 500,
+        "type": "Occasion",
+        "name": "Happy anniversary",
+        "image": "ic_happy_anniversary"
+    },
+    {
+        "id": 501,
+        "type": "Occasion",
+        "name": "Anniversary",
+        "image": "ic_anniversary"
+    },
+    {
+        "id": 1000,
+        "type": "Eat healthy",
+        "name": "Have a great breakfast",
+        "image": "ic_breakfast",
+        "description": "Start a new day with fresh food and fresh mind",
+        "isActivity": true
+    },
+    {
+        "id": 1001,
+        "type": "Eat healthy",
+        "name": "Pack my lunch",
+        "image": "ic_lunch",
+        "description": "Be balanced and economic",
+        "isActivity": true
+    },
+    {
+        "id": 1002,
+        "type": "Eat healthy",
+        "name": "Enjoy a full course dinner",
+        "image": "ic_dinner",
+        "description": "Reward yourself with a flavorful night",
+        "isActivity": true
+    },
+    {
+        "id": 1003,
+        "type": "Eat healthy",
+        "name": "Let's drink water",
+        "image": "ic_water",
+        "description": "Keep yourself away from dehydration",
+        "isActivity": true
+    },
+    {
+        "id": 1004,
+        "type": "Eat healthy",
+        "name": "Have a cup of tea",
+        "image": "ic_tea",
+        "description": "Substitute tea for sugary drink makes healthier body",
+        "isActivity": true
+    },
+    {
+        "id": 1005,
+        "type": "Eat healthy",
+        "name": "Eat more fruits & vegies",
+        "image": "ic_fruits",
+        "description": "Match your day with colorful fruits and vegies",
+        "isActivity": true
+    },
+    {
+        "id": 1006,
+        "type": "Eat healthy",
+        "name": "Have a little bag of nuts",
+        "image": "ic_nuts",
+        "description": "Nuts and seeds are perfect choices for snack",
+        "isActivity": true
+    },
+    {
+        "id": 1007,
+        "type": "Eat healthy",
+        "name": "Eat more fish and seafood",
+        "image": "ic_seafood",
+        "description": "The good source for vitamins and minerals",
+        "isActivity": true
+    },
+    {
+        "id": 1008,
+        "type": "Eat healthy",
+        "name": "Try higher fibre or whole grain",
+        "image": "ic_whole_grain",
+        "description": "Help you feel full for longer",
+        "isActivity": true
+    },
+    {
+        "id": 1009,
+        "type": "Eat healthy",
+        "name": "No sugar day",
+        "image": "ic_no_sugar",
+        "description": "Less sugar, more flavor",
+        "isActivity": true
+    },
+    {
+        "id": 1010,
+        "type": "Eat healthy",
+        "name": "Cut down on saturated fat",
+        "image": "ic_saturated_fat",
+        "description": "Stay healthy, less risk on heart disease",
+        "isActivity": true
+    },
+    {
+        "id": 1011,
+        "type": "Eat healthy",
+        "name": "Eat less salt",
+        "image": "ic_eat_less_salt",
+        "description": "Help control your blood pressure",
+        "isActivity": true
+    },
+    {
+        "id": 1012,
+        "type": "Eat healthy",
+        "name": "Take vitamins",
+        "image": "ic_take_vitamins",
+        "description": "Remember to take your happy vitamin everyday",
+        "isActivity": true
+    },
+    {
+        "id": 2000,
+        "type": "Be active my way",
+        "name": "Tidy up",
+        "image": "ic_tidy_up",
+        "description": "Clean your place is a way to clean your mind",
+        "isActivity": true
+    },
+    {
+        "id": 2001,
+        "type": "Be active my way",
+        "name": "Do light exercise",
+        "image": "ic_light_exercise",
+        "description": "Energize your body and sharpen your mind",
+        "isActivity": true
+    },
+    {
+        "id": 2002,
+        "type": "Be active my way",
+        "name": "Make my bed",
+        "image": "ic_make_my_bed",
+        "description": "Star a day with an accomplishment",
+        "isActivity": true
+    },
+    {
+        "id": 2003,
+        "type": "Be active my way",
+        "name": "Stretch",
+        "image": "ic_stretch",
+        "description": "Feel tired? Try a 1 minute streching",
+        "isActivity": true
+    },
+    {
+        "id": 2004,
+        "type": "Be active my way",
+        "name": "A walk per day",
+        "image": "ic_a_walk_per_day",
+        "description": "Life is moving and so are you",
+        "isActivity": true
+    },
+    {
+        "id": 2005,
+        "type": "Be active my way",
+        "name": "Try Yoga",
+        "image": "ic_try_yoga",
+        "description": "Relieve stress and increase flexibility",
+        "isActivity": true
+    },
+    {
+        "id": 2006,
+        "type": "Be active my way",
+        "name": "Meditate",
+        "image": "ic_meditate",
+        "description": "Keep calm, clear your head and enhance focus",
+        "isActivity": true
+    },
+    {
+        "id": 2007,
+        "type": "Be active my way",
+        "name": "Enter a sport event",
+        "image": "ic_sport_event",
+        "description": "Stay active and stay connected",
+        "isActivity": true
+    },
+    {
+        "id": 2008,
+        "type": "Be active my way",
+        "name": "Check my health",
+        "image": "ic_check_my_health",
+        "description": "Track your body and feelings regularly",
+        "isActivity": true
+    },
+    {
+        "id": 2009,
+        "type": "Be active my way",
+        "name": "Let's get cooking",
+        "image": "ic_get_cooking",
+        "description": "Find happiness in your kitchen",
+        "isActivity": true
+    },
+    {
+        "id": 3000,
+        "type": "Connect with others",
+        "name": "Talk with my parents",
+        "image": "ic_talk_parents",
+        "description": "Get back home, to the place you belong",
+        "isActivity": true
+    },
+    {
+        "id": 3001,
+        "type": "Connect with others",
+        "name": "Reconnect with friends",
+        "image": "ic_reconnect_friends",
+        "description": "Reminisce your good times and stay updated",
+        "isActivity": true
+    },
+    {
+        "id": 3002,
+        "type": "Connect with others",
+        "name": "Join club activities",
+        "image": "ic_join_club",
+        "description": "Expand your network and find new addiction",
+        "isActivity": true
+    },
+    {
+        "id": 3003,
+        "type": "Connect with others",
+        "name": "Travel with someone",
+        "image": "ic_travel",
+        "description": "Forget your worries, feel free and fly high",
+        "isActivity": true
+    },
+    {
+        "id": 3004,
+        "type": "Connect with others",
+        "name": "Have romantic date",
+        "image": "ic_romantic_date",
+        "description": "Time to give your relationship a boost",
+        "isActivity": true
+    },
+    {
+        "id": 3005,
+        "type": "Connect with others",
+        "name": "Visit relatives",
+        "image": "ic_visit_relatives",
+        "description": "Give love to your family as they always do to you",
+        "isActivity": true
+    },
+    {
+        "id": 3006,
+        "type": "Connect with others",
+        "name": "Talk with someone",
+        "image": "ic_talk_with_someone",
+        "description": "Listen to others, and share your story",
+        "isActivity": true
+    },
+    {
+        "id": 3007,
+        "type": "Connect with others",
+        "name": "I love my pet",
+        "image": "ic_love_pet",
+        "description": "Spend good amount of time with your pet",
+        "isActivity": true
+    },
+    {
+        "id": 4000,
+        "type": "Self relaxation",
+        "name": "Breath slowly and deeply",
+        "image": "ic_breath_slowly",
+        "description": "Spend few minutes to relax and destress",
+        "isActivity": true
+    },
+    {
+        "id": 4001,
+        "type": "Self relaxation",
+        "name": "Brush my teeth",
+        "image": "ic_brush_teeth",
+        "description": "Prepare for your shining smile",
+        "isActivity": true
+    },
+    {
+        "id": 4002,
+        "type": "Self relaxation",
+        "name": "Groom myself",
+        "image": "ic_groom_myself",
+        "description": "Rejoice, give yourself a makeover",
+        "isActivity": true
+    },
+    {
+        "id": 4003,
+        "type": "Self relaxation",
+        "name": "Enjoy a shower",
+        "image": "ic_enjoy_shower",
+        "description": "Let water wash away all your worries",
+        "isActivity": true
+    },
+    {
+        "id": 4004,
+        "type": "Self relaxation",
+        "name": "Write things down",
+        "image": "ic_write_things_down",
+        "description": "Pour out your emotions and stress",
+        "isActivity": true
+    },
+    {
+        "id": 4005,
+        "type": "Self relaxation",
+        "name": "Have a good read",
+        "image": "ic_read",
+        "description": "Reading is like medicine for the soul",
+        "isActivity": true
+    },
+    {
+        "id": 4006,
+        "type": "Self relaxation",
+        "name": "Power nap",
+        "image": "ic_power_nap",
+        "description": "Wake up refreshed and empowered",
+        "isActivity": true
+    },
+    {
+        "id": 4007,
+        "type": "Self relaxation",
+        "name": "Get full night sleep",
+        "image": "ic_get_full_night_sleep",
+        "description": "Take good sleep to recharge your energy",
+        "isActivity": true
+    },
+    {
+        "id": 4008,
+        "type": "Self relaxation",
+        "name": "Take an Internet break",
+        "image": "ic_internet_break",
+        "description": "Disconnect from devices to reconnect with humanity",
+        "isActivity": true
+    },
+    {
+        "id": 4009,
+        "type": "Self relaxation",
+        "name": "Listen to favorite music",
+        "image": "ic_music",
+        "description": "Let music convey happiness and heal your soul",
+        "isActivity": true
+    },
+    {
+        "id": 4010,
+        "type": "Self relaxation",
+        "name": "Talk to myself",
+        "image": "ic_talk_myself",
+        "description": "Reflect with a smile, and you receive a smile back",
+        "isActivity": true
+    },
+    {
+        "id": 5000,
+        "type": "Self improvement",
+        "name": "Learn language",
+        "image": "ic_learn_language",
+        "description": "\"Everyone smiles in the same language\"",
+        "isActivity": true
+    },
+    {
+        "id": 5001,
+        "type": "Self improvement",
+        "name": "Learn new craft",
+        "image": "ic_learn_craft",
+        "description": "Be creative with your life",
+        "isActivity": true
+    },
+    {
+        "id": 5002,
+        "type": "Self improvement",
+        "name": "Hone my skill",
+        "image": "ic_hone_my_skill",
+        "description": "Be professional and get that respect",
+        "isActivity": true
+    },
+    {
+        "id": 5003,
+        "type": "Self improvement",
+        "name": "Take up musical instrument",
+        "image": "ic_musical_instrument",
+        "description": "Build your confidence, enchant your audience",
+        "isActivity": true
+    },
+    {
+        "id": 5004,
+        "type": "Self improvement",
+        "name": "Commit to my plan",
+        "image": "ic_commit_my_plan",
+        "description": "Accomplish what you started",
+        "isActivity": true
+    },
+    {
+        "id": 5005,
+        "type": "Self improvement",
+        "name": "Work hard & play hard",
+        "image": "ic_work_hard",
+        "description": "Focus on getting task done",
+        "isActivity": true
+    },
+    {
+        "id": 5006,
+        "type": "Self improvement",
+        "name": "Inbox zero",
+        "image": "ic_inbox_zero",
+        "description": "Free your inbox to free your mind",
+        "isActivity": true
+    },
+    {
+        "id": 5007,
+        "type": "Self improvement",
+        "name": "Manage my digital life",
+        "image": "ic_manage_life",
+        "description": "Cut down on online time to experience real life moments",
+        "isActivity": true
+    },
+    {
+        "id": 5008,
+        "type": "Self improvement",
+        "name": "List my to do",
+        "image": "ic_list_to_do",
+        "description": "Start a productive day with a happy note",
+        "isActivity": true
+    },
+    {
+        "id": 5009,
+        "type": "Self improvement",
+        "name": "List my not to do",
+        "image": "ic_list_not_to_do",
+        "description": "Dump useless worries and de-clutter your brain",
+        "isActivity": true
+    },
+    {
+        "id": 5010,
+        "type": "Self improvement",
+        "name": "Try again",
+        "image": "ic_try_again",
+        "description": "Failure is the mother of success they said",
+        "isActivity": true
+    },
+    {
+        "id": 6000,
+        "type": "Be a little crazy",
+        "name": "Work on a secret project",
+        "image": "ic_work_secret_project",
+        "description": "Surprise everyone with what you can do",
+        "isActivity": true
+    },
+    {
+        "id": 6001,
+        "type": "Be a little crazy",
+        "name": "Try DIY",
+        "image": "ic_try_DIY",
+        "description": "Take a moment to be inspired by your work",
+        "isActivity": true
+    },
+    {
+        "id": 6002,
+        "type": "Be a little crazy",
+        "name": "Be an artist",
+        "image": "ic_be_an_artist",
+        "description": "Fill your world with imagination",
+        "isActivity": true
+    },
+    {
+        "id": 6003,
+        "type": "Be a little crazy",
+        "name": "Make everything a game",
+        "image": "ic_make_everything_game",
+        "description": "Transform your daily routine into a gameboard",
+        "isActivity": true
+    },
+    {
+        "id": 6004,
+        "type": "Be a little crazy",
+        "name": "Quote my day",
+        "image": "ic_quote_day",
+        "description": "Give today a quote with your honest feeling",
+        "isActivity": true
+    },
+    {
+        "id": 6005,
+        "type": "Be a little crazy",
+        "name": "Party party",
+        "image": "ic_party_party",
+        "description": "Celebrate the day with creative ideas",
+        "isActivity": true
+    },
+    {
+        "id": 6006,
+        "type": "Be a little crazy",
+        "name": "Travel by myself",
+        "image": "ic_travel_myself",
+        "description": "Release stress and find new inspiration",
+        "isActivity": true
+    },
+    {
+        "id": 6007,
+        "type": "Be a little crazy",
+        "name": "Plan a tree",
+        "image": "ic_plan_tree",
+        "description": "Connect with nature is connect with your soul",
+        "isActivity": true
+    },
+    {
+        "id": 6008,
+        "type": "Be a little crazy",
+        "name": "Teach my pet a trick",
+        "image": "ic_teach_my_pet",
+        "description": "Bonding time with human's best friend",
+        "isActivity": true
+    },
+    {
+        "id": 6009,
+        "type": "Be a little crazy",
+        "name": "Volunteer work",
+        "image": "ic_volunteer_work",
+        "description": "Spend your spare time for selfless actions",
+        "isActivity": true
+    }
+]

@@ -1,0 +1,775 @@
+[
+    {
+        "id": 100,
+        "type": "Health",
+        "name": "Vươn lên và tỏa sáng",
+        "image": "ic_rise_shine"
+    },
+    {
+        "id": 101,
+        "type": "Health",
+        "name": "Cảm thấy không khỏe",
+        "image": "ic_see_doctor"
+    },
+    {
+        "id": 102,
+        "type": "Health",
+        "name": "Bị ốm",
+        "image": "ic_got_sick"
+    },
+    {
+        "id": 200,
+        "type": "Relationship",
+        "name": "Thời gian cho gia đình",
+        "image": "ic_family_time"
+    },
+    {
+        "id": 201,
+        "type": "Relationship",
+        "name": "Hẹn hò",
+        "image": "ic_have_date"
+    },
+    {
+        "id": 202,
+        "type": "Relationship",
+        "name": "Tiệc tùng",
+        "image": "ic_party_party"
+    },
+    {
+        "id": 203,
+        "type": "Relationship",
+        "name": "Một mình hôm nay",
+        "image": "ic_feel_lonely"
+    },
+    {
+        "id": 204,
+        "type": "Relationship",
+        "name": "Đau lòng",
+        "image": "ic_heartbroken"
+    },
+    {
+        "id": 205,
+        "type": "Relationship",
+        "name": "Ngày tồi tệ",
+        "image": "ic_date_gone_wrong"
+    },
+    {
+        "id": 206,
+        "type": "Relationship",
+        "name": "Không tiệc tùng",
+        "image": "ic_no_party"
+    },
+    {
+        "id": 301,
+        "type": "Work & study",
+        "name": "Hoàn thành",
+        "image": "ic_accomplished"
+    },
+    {
+        "id": 302,
+        "type": "Work & study",
+        "name": "Hoàn thành nhiệm vụ",
+        "image": "ic_tasks_done"
+    },
+    {
+        "id": 303,
+        "type": "Work & study",
+        "name": "Đáp ứng thời hạn",
+        "image": "ic_meet_deadline"
+    },
+    {
+        "id": 304,
+        "type": "Work & study",
+        "name": "Thông qua",
+        "image": "ic_passed"
+    },
+    {
+        "id": 305,
+        "type": "Work & study",
+        "name": "Ngày vô ích",
+        "image": "ic_useless_day"
+    },
+    {
+        "id": 306,
+        "type": "Work & study",
+        "name": "Làm thêm giờ",
+        "image": "ic_work_overtime"
+    },
+    {
+        "id": 307,
+        "type": "Work & study",
+        "name": "Không được thông qua",
+        "image": "ic_not_passed"
+    },
+    {
+        "id": 308,
+        "type": "Work & study",
+        "name": "Quá bận",
+        "image": "ic_busy_day"
+    },
+    {
+        "id": 319,
+        "type": "Work & study",
+        "name": "Nhỡ hạn chót",
+        "image": "ic_missed_deadline"
+    },
+    {
+        "id": 400,
+        "type": "Activities",
+        "name": "Tập thể dục",
+        "image": "ic_exercise"
+    },
+    {
+        "id": 401,
+        "type": "Activities",
+        "name": "Chiến thắng",
+        "image": "ic_win_game"
+    },
+    {
+        "id": 402,
+        "type": "Activities",
+        "name": "Mua sắm",
+        "image": "ic_shopping"
+    },
+    {
+        "id": 403,
+        "type": "Activities",
+        "name": "Ngày nghỉ",
+        "image": "ic_free_day"
+    },
+    {
+        "id": 404,
+        "type": "Activities",
+        "name": "Đi du lịch",
+        "image": "ic_travelling"
+    },
+    {
+        "id": 405,
+        "type": "Activities",
+        "name": "Chuyến đi tuyệt vời",
+        "image": "ic_wonderful_trip"
+    },
+    {
+        "id": 406,
+        "type": "Activities",
+        "name": "An toàn",
+        "image": "ic_safe_trip"
+    },
+    {
+        "id": 407,
+        "type": "Activities",
+        "name": "Thức ăn ngon",
+        "image": "ic_good_meal"
+    },
+    {
+        "id": 408,
+        "type": "Activities",
+        "name": "Sách hay",
+        "image": "ic_good_reading"
+    },
+    {
+        "id": 409,
+        "type": "Activities",
+        "name": "Sở thích mới",
+        "image": "ic_new_hobby"
+    },
+    {
+        "id": 410,
+        "type": "Activities",
+        "name": "Ngủ ngon",
+        "image": "ic_good_sleep"
+    },
+    {
+        "id": 411,
+        "type": "Activities",
+        "name": "Đúng kế hoạch",
+        "image": "ic_go_as_planned"
+    },
+    {
+        "id": 412,
+        "type": "Activities",
+        "name": "Không tập thể dục",
+        "image": "ic_no_exercise"
+    },
+    {
+        "id": 413,
+        "type": "Activities",
+        "name": "Chuyến đi nhàm chán",
+        "image": "ic_boring_trip"
+    },
+    {
+        "id": 414,
+        "type": "Activities",
+        "name": "Sách nhàm chán",
+        "image": "ic_boring_book"
+    },
+    {
+        "id": 415,
+        "type": "Activities",
+        "name": "Kế hoạc bị hủy bỏ",
+        "image": "ic_plan_canceled"
+    },
+    {
+        "id": 416,
+        "type": "Activities",
+        "name": "Thua cuộc",
+        "image": "ic_loose_game"
+    },
+    {
+        "id": 417,
+        "type": "Activities",
+        "name": "Mất tiền",
+        "image": "ic_money_spent"
+    },
+    {
+        "id": 418,
+        "type": "Activities",
+        "name": "Bị lạc đường",
+        "image": "ic_get_lost "
+    },
+    {
+        "id": 419,
+        "type": "Activities",
+        "name": "Bị thương",
+        "image": "ic_small_injury"
+    },
+    {
+        "id": 420,
+        "type": "Activities",
+        "name": "Thực phẩm xấu",
+        "image": "ic_bad_food"
+    },
+    {
+        "id": 421,
+        "type": "Activities",
+        "name": "Không có gì làm",
+        "image": "ic_nothing_to_do"
+    },
+    {
+        "id": 422,
+        "type": "Activities",
+        "name": "Thiếu ngủ",
+        "image": "ic_lack_of_sleep"
+    },
+    {
+        "id": 425,
+        "type": "Activities",
+        "name": "Tai nạn",
+        "image": "ic_got_into_accident"
+    },
+    {
+        "id": 500,
+        "type": "Occasion",
+        "name": "Chúc mừng kỷ niệm",
+        "image": "ic_happy_anniversary"
+    },
+    {
+        "id": 501,
+        "type": "Occasion",
+        "name": "Ngày kỷ niệm",
+        "image": "ic_anniversary"
+    },
+    {
+        "id": 1000,
+        "type": "Eat healthy",
+        "name": "Có một bữa sáng tuyệt vời",
+        "image": "ic_breakfast",
+        "description": "Bắt đầu một ngày mới với thực phẩm tươi và tinh thần tươi mới",
+        "isActivity": true
+    },
+    {
+        "id": 1001,
+        "type": "Eat healthy",
+        "name": "Chuẩn bị bữa trưa",
+        "image": "ic_lunch",
+        "description": "Sống cân bằng",
+        "isActivity": true
+    },
+    {
+        "id": 1002,
+        "type": "Eat healthy",
+        "name": "Thưởng thức một bữa ăn tối đầy đủ",
+        "image": "ic_dinner",
+        "description": "Tự thưởng cho mình với một đêm đầy hương vị",
+        "isActivity": true
+    },
+    {
+        "id": 1003,
+        "type": "Eat healthy",
+        "name": "Uống đủ nước",
+        "image": "ic_water",
+        "description": "Giữ cho bản thân khỏi mất nước",
+        "isActivity": true
+    },
+    {
+        "id": 1004,
+        "type": "Eat healthy",
+        "name": "Thưởng thức một tách trà",
+        "image": "ic_tea",
+        "description": "Dùng trà thay thế cho thức uống có đường, để cơ thể khỏa mạnh hơn",
+        "isActivity": true
+    },
+    {
+        "id": 1005,
+        "type": "Eat healthy",
+        "name": "Ăn nhiều trái cây và rau quả",
+        "image": "ic_fruits",
+        "description": "Kết hợp ngày của bạn với các loại trái cây và rau nhiều màu sắc",
+        "isActivity": true
+    },
+    {
+        "id": 1006,
+        "type": "Eat healthy",
+        "name": "Mang theo một túi nhỏ hạt",
+        "image": "ic_nuts",
+        "description": "Các loại hạt là sự lựa chọn hoàn hảo cho bữa ăn nhẹ",
+        "isActivity": true
+    },
+    {
+        "id": 1007,
+        "type": "Eat healthy",
+        "name": "Ăn nhiều cá và hải sản",
+        "image": "ic_seafood",
+        "description": "Bổ sung vitamin và khoáng chất tốt",
+        "isActivity": true
+    },
+    {
+        "id": 1008,
+        "type": "Eat healthy",
+        "name": "Hãy thử ăn chất xơ hoặc ngũ cốc nguyên hạt",
+        "image": "ic_whole_grain",
+        "description": "Giúp bạn cảm thấy no lâu hơn",
+        "isActivity": true
+    },
+    {
+        "id": 1009,
+        "type": "Eat healthy",
+        "name": "Ngày không đường",
+        "image": "ic_no_sugar",
+        "description": "Ít đường, nhiều hương vị",
+        "isActivity": true
+    },
+    {
+        "id": 1010,
+        "type": "Eat healthy",
+        "name": "Cắt giảm chất béo bão hòa",
+        "image": "ic_saturated_fat",
+        "description": "Giữ gìn sức khỏe, ít rủi ro về bệnh tim mạch",
+        "isActivity": true
+    },
+    {
+        "id": 1011,
+        "type": "Eat healthy",
+        "name": "Ăn ít muối",
+        "image": "ic_eat_less_salt",
+        "description": "Giúp kiểm soát huyết áp của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 1012,
+        "type": "Eat healthy",
+        "name": "Uống vitamin",
+        "image": "ic_take_vitamins",
+        "description": "Nhớ uống vitamin hạnh phúc mỗi ngày",
+        "isActivity": true
+    },
+    {
+        "id": 2000,
+        "type": "Be active my way",
+        "name": "Sống gọn gàng",
+        "image": "ic_tidy_up",
+        "description": "Làm sạch nơi ở của bạn là một cách để thanh lọc tâm trí của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 2001,
+        "type": "Be active my way",
+        "name": "Tập thể dục",
+        "image": "ic_light_exercise",
+        "description": "Cung cấp năng lượng cho cơ thể của bạn và xây dựng lối sống tích cực",
+        "isActivity": true
+    },
+    {
+        "id": 2002,
+        "type": "Be active my way",
+        "name": "Dọn giường",
+        "image": "ic_make_my_bed",
+        "description": "Bắt đầu ngày mới với một kế hoạch được thực hiện",
+        "isActivity": true
+    },
+    {
+        "id": 2003,
+        "type": "Be active my way",
+        "name": "Duỗi tay chân",
+        "image": "ic_stretch",
+        "description": "Cảm thấy mệt mỏi? Hãy thử động tác kéo dãn cơ trong 1 phút",
+        "isActivity": true
+    },
+    {
+        "id": 2004,
+        "type": "Be active my way",
+        "name": "Đi bộ mỗi ngày",
+        "image": "ic_a_walk_per_day",
+        "description": "Cuộc sống đang chuyển động và bạn cũng vậy",
+        "isActivity": true
+    },
+    {
+        "id": 2005,
+        "type": "Be active my way",
+        "name": "Tập yoga",
+        "image": "ic_try_yoga",
+        "description": "Giảm căng thẳng và tăng tính linh hoạt",
+        "isActivity": true
+    },
+    {
+        "id": 2006,
+        "type": "Be active my way",
+        "name": "Suy xét",
+        "image": "ic_meditate",
+        "description": "Giữ bình tĩnh, đầu óc tỉnh táo và tăng cường sự tập trung",
+        "isActivity": true
+    },
+    {
+        "id": 2007,
+        "type": "Be active my way",
+        "name": "Tham gia một sự kiện thể thao",
+        "image": "ic_sport_event",
+        "description": "Sống năng lượng và duy trì kết nối",
+        "isActivity": true
+    },
+    {
+        "id": 2008,
+        "type": "Be active my way",
+        "name": "Kiểm tra sức khỏe",
+        "image": "ic_check_my_health",
+        "description": "Theo dõi cơ thể và cảm xúc của bạn thường xuyên",
+        "isActivity": true
+    },
+    {
+        "id": 2009,
+        "type": "Be active my way",
+        "name": "Nấu ăn",
+        "image": "ic_get_cooking",
+        "description": "Tìm hạnh phúc thông qua việc nấu ăn ở nhà",
+        "isActivity": true
+    },
+    {
+        "id": 3000,
+        "type": "Connect with others",
+        "name": "Tâm sự với cha mẹ",
+        "image": "ic_talk_parents",
+        "description": "Trở về nhà và đến nơi bạn thuộc về",
+        "isActivity": true
+    },
+    {
+        "id": 3001,
+        "type": "Connect with others",
+        "name": "Kết nối với bạn bè",
+        "image": "ic_reconnect_friends",
+        "description": "Hồi tưởng về thời gian tốt đẹp của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 3002,
+        "type": "Connect with others",
+        "name": "Tham gia các hoạt động ở câu lạc bộ",
+        "image": "ic_join_club",
+        "description": "Mở rộng mạng lưới của bạn và tìm kiếm trải nghiệm mới",
+        "isActivity": true
+    },
+    {
+        "id": 3003,
+        "type": "Connect with others",
+        "name": "Du lịch với một ai đó",
+        "image": "ic_travel",
+        "description": "Quên đi những lo lắng của bạn để cảm thấy tự do và bay cao",
+        "isActivity": true
+    },
+    {
+        "id": 3004,
+        "type": "Connect with others",
+        "name": "Tạo một ngày lãng mạn",
+        "image": "ic_romantic_date",
+        "description": "Dành thời gian để thúc đẩy mối quan hệ của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 3005,
+        "type": "Connect with others",
+        "name": "Thăm họ hàng",
+        "image": "ic_visit_relatives",
+        "description": "Hãy dành tình yêu cho gia đình, những người luôn yêu thương bạn",
+        "isActivity": true
+    },
+    {
+        "id": 3006,
+        "type": "Connect with others",
+        "name": "Nói chuyện với một người nào đó",
+        "image": "ic_talk_with_someone",
+        "description": "Lắng nghe người khác, và chia sẻ câu chuyện của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 3007,
+        "type": "Connect with others",
+        "name": "Chăm sóc thú cưng",
+        "image": "ic_love_pet",
+        "description": "Dành nhiều thời gian với thú cưng của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 4000,
+        "type": "Self relaxation",
+        "name": "Hít thở chậm và sâu",
+        "image": "ic_breath_slowly",
+        "description": "Dành vài phút để thư giãn và giảm stress",
+        "isActivity": true
+    },
+    {
+        "id": 4001,
+        "type": "Self relaxation",
+        "name": "Đánh răng",
+        "image": "ic_brush_teeth",
+        "description": "Luôn có một nụ cười tỏa sáng",
+        "isActivity": true
+    },
+    {
+        "id": 4002,
+        "type": "Self relaxation",
+        "name": "Chải chuốt bản thân",
+        "image": "ic_groom_myself",
+        "description": "Hãy trang điểm cho bản thân",
+        "isActivity": true
+    },
+    {
+        "id": 4003,
+        "type": "Self relaxation",
+        "name": "Tận hưởng ngâm mình trong nước ",
+        "image": "ic_enjoy_shower",
+        "description": "Hãy để nước cuốn trôi mọi lo lắng của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 4004,
+        "type": "Self relaxation",
+        "name": "Viết một cái gì đó",
+        "image": "ic_write_things_down",
+        "description": "Loại bỏ hết cảm xúc và căng thẳng của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 4005,
+        "type": "Self relaxation",
+        "name": "Đọc một cuốn sách hay",
+        "image": "ic_read",
+        "description": "Đọc sách giống như một liều thuốc cho tâm hồn",
+        "isActivity": true
+    },
+    {
+        "id": 4006,
+        "type": "Self relaxation",
+        "name": "Ngủ trưa",
+        "image": "ic_power_nap",
+        "description": "Thức dậy làm mới và trao quyền",
+        "isActivity": true
+    },
+    {
+        "id": 4007,
+        "type": "Self relaxation",
+        "name": "Ngủ đủ giấc",
+        "image": "ic_get_full_night_sleep",
+        "description": "Hãy ngủ ngon để nạp năng lượng cho cơ thể",
+        "isActivity": true
+    },
+    {
+        "id": 4008,
+        "type": "Self relaxation",
+        "name": "Tắt kết nối Internet",
+        "image": "ic_internet_break",
+        "description": "Ngắt kết nối với các thiết bị, để kết nối lại với mọi người",
+        "isActivity": true
+    },
+    {
+        "id": 4009,
+        "type": "Self relaxation",
+        "name": "Nghe nhạc yêu thích",
+        "image": "ic_music",
+        "description": "Hãy để âm nhạc truyền tải hạnh phúc và chữa lành tâm hồn bạn",
+        "isActivity": true
+    },
+    {
+        "id": 4010,
+        "type": "Self relaxation",
+        "name": "Nói chuyện với bản thân mình",
+        "image": "ic_talk_myself",
+        "description": "Mỉm cười với mọi người, và bạn sẽ nhận về niềm vui ấm áp",
+        "isActivity": true
+    },
+    {
+        "id": 5000,
+        "type": "Self improvement",
+        "name": "Tìm hiểu ngôn ngữ mới",
+        "image": "ic_learn_language",
+        "description": "\"Everyone smiles in the same language\"",
+        "isActivity": true
+    },
+    {
+        "id": 5001,
+        "type": "Self improvement",
+        "name": "Tìm hiểu nghề mới",
+        "image": "ic_learn_craft",
+        "description": "Hãy sáng tạo với cuộc sống của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 5002,
+        "type": "Self improvement",
+        "name": "Trau dồi kỹ năng",
+        "image": "ic_hone_my_skill",
+        "description": "Hãy làm mọi việc một cách chuyên nghiệp, bạn sẽ nhận được sự tôn trọng",
+        "isActivity": true
+    },
+    {
+        "id": 5003,
+        "type": "Self improvement",
+        "name": "Học nhạc cụ",
+        "image": "ic_musical_instrument",
+        "description": "Xây dựng sự tự tin vào bản thân sẽ tạo sự cuốn hút từ người khác",
+        "isActivity": true
+    },
+    {
+        "id": 5004,
+        "type": "Self improvement",
+        "name": "Cam kết với kế hoạch của bản thân",
+        "image": "ic_commit_my_plan",
+        "description": "Hoàn thành những gì bạn bắt đầu",
+        "isActivity": true
+    },
+    {
+        "id": 5005,
+        "type": "Self improvement",
+        "name": "Làm việc chăm chỉ và chơi hết mình",
+        "image": "ic_work_hard",
+        "description": "Tập trung vào hoàn thành nhiệm vụ",
+        "isActivity": true
+    },
+    {
+        "id": 5006,
+        "type": "Self improvement",
+        "name": "Kiểm tra hộp thư",
+        "image": "ic_inbox_zero",
+        "description": "Giải phóng hộp thư của bạn để giải phóng tâm trí của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 5007,
+        "type": "Self improvement",
+        "name": "Quản lý cuộc sống kỹ thuật số",
+        "image": "ic_manage_life",
+        "description": "Cắt giảm thời gian trực tuyến để trải nghiệm những khoảnh khắc cuộc sống thực"
+    },
+    {
+        "id": 5008,
+        "type": "Self improvement",
+        "name": "Lên danh sách công việc cần làm",
+        "image": "ic_list_to_do",
+        "description": "Bắt đầu một ngày năng suất cao với một câu nói ý nghĩa",
+        "isActivity": true
+    },
+    {
+        "id": 5009,
+        "type": "Self improvement",
+        "name": "Lên danh sách các việc không nên làm",
+        "image": "ic_list_not_to_do",
+        "description": "Loại bỏ những lo lắng vô ích và dọn dẹp bộ não của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 5010,
+        "type": "Self improvement",
+        "name": "Thử lại",
+        "image": "ic_try_again",
+        "description": "Thất bại là mẹ của thành công",
+        "isActivity": true
+    },
+    {
+        "id": 6000,
+        "type": "Be a little crazy",
+        "name": "Tham gia một dự án bí mật",
+        "image": "ic_work_secret_project",
+        "description": "Làm mọi người ngạc nhiên với những gì bạn có thể làm",
+        "isActivity": true
+    },
+    {
+        "id": 6001,
+        "type": "Be a little crazy",
+        "name": "Hãy thử làm mọi thứ",
+        "image": "ic_try_DIY",
+        "description": "Dành ít phút để được lấy cảm hứng từ công việc của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 6002,
+        "type": "Be a little crazy",
+        "name": "Tập làm họa sĩ",
+        "image": "ic_be_an_artist",
+        "description": "Lấp đầy thế giới của bạn với trí tưởng tượng",
+        "isActivity": true
+    },
+    {
+        "id": 6003,
+        "type": "Be a little crazy",
+        "name": "Xem mọi thứ như là một trò chơi",
+        "image": "ic_make_everything_game",
+        "description": "Chuyển đổi thói quen hàng ngày của bạn thành một bảng trò chơi",
+        "isActivity": true
+    },
+    {
+        "id": 6004,
+        "type": "Be a little crazy",
+        "name": "Trích dẫn câu nói hay mỗi ngày",
+        "image": "ic_quote_day",
+        "description": "Đưa ra một trích dẫn với cảm giác trung thực của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 6005,
+        "type": "Be a little crazy",
+        "name": "Tiệc tùng",
+        "image": "ic_party_party",
+        "description": "Mừng ngày kỷ niệm với những ý tưởng sáng tạo",
+        "isActivity": true
+    },
+    {
+        "id": 6006,
+        "type": "Be a little crazy",
+        "name": "Du lịch một mình",
+        "image": "ic_travel_myself",
+        "description": "Giải tỏa căng thẳng và tìm nguồn cảm hứng mới",
+        "isActivity": true
+    },
+    {
+        "id": 6007,
+        "type": "Be a little crazy",
+        "name": "Lên kế hoạch trồng cây",
+        "image": "ic_plan_tree",
+        "description": "Kết nối với thiên nhiên là kết nối với linh hồn của bạn",
+        "isActivity": true
+    },
+    {
+        "id": 6008,
+        "type": "Be a little crazy",
+        "name": "Dạy thú cưng",
+        "image": "ic_teach_my_pet",
+        "description": "Dành thời gian gắn bó với người bạn thân thiết",
+        "isActivity": true
+    },
+    {
+        "id": 6009,
+        "type": "Be a little crazy",
+        "name": "Công việc tình nguyện",
+        "image": "ic_volunteer_work",
+        "description": "Dành thười gian rảnh rỗi cho những hành động vị tha",
+        "isActivity": true
+    }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "title": "Ăn uống lành mạnh",
+    "description": "Giảm stress và quản lý cảm xúc bằng việc có một sự cân bằng và ăn uống lành mạnh",
+    "largeImage": "bg_header_eat_healthy",
+    "image": "bg_eat_healthy",
+    "textColor": "FFFFFF",
+    "activities": [
+      1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011,
+      1012
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Tập thư giãn",
+    "description": "Trân trọng những gì bạn đang có và những gì bạn làm",
+    "largeImage": "bg_header_self_relaxation",
+    "image": "bg_self_relaxation",
+    "textColor": "FFFFFF",
+    "activities": [
+      4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Sống tích cực theo cách của mình",
+    "description": "Sống tích cực là một cách tốt để tránh bị stress và giữ dáng",
+    "largeImage": "bg_header_be_active",
+    "image": "bg_be_active",
+    "textColor": "FFFFFF",
+    "activities": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009]
+  },
+  {
+    "id": 4,
+    "title": "Hãy thử một việc điên rồ",
+    "description": "Thêm niềm vui trong thói quen hàng ngày của bạn",
+    "largeImage": "bg_header_be_little_crazy",
+    "image": "bg_be_little_crazy",
+    "textColor": "FFFFFF",
+    "activities": [6000, 6001, 6002, 6003, 6004, 6005, 6006, 6007, 6008, 6009]
+  },
+  {
+    "id": 5,
+    "title": "Kết nối với mọi người",
+    "description": "Tạo cảm giác yêu thương, chia sẻ nhữung khoảnh khắc quý báu của bạn với gia đình và những người thân yêu",
+    "largeImage": "bg_header_connect_others",
+    "image": "bg_connect_others",
+    "textColor": "FFFFFF",
+    "activities": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007]
+  },
+
+  {
+    "id": 6,
+    "title": "Cải thiện bản thân",
+    "description": "Bắt đầu một ngày mới với tâm trạng hạnh phúc",
+    "largeImage": "bg_header_self_improvement",
+    "image": "bg_self_improvement",
+    "textColor": "FFFFFF",
+    "activities": [
+      5000, 5001, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010
+    ]
+  }
+]

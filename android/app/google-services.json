@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "45263601119",
+    "project_id": "mooddiarytracker",
+    "storage_bucket": "mooddiarytracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45263601119:android:36817fb33de44d9900d86a",
+        "android_client_info": {
+          "package_name": "com.utils.moodtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45263601119-so2o4ccf065sfobvb18qp8ndepvu1k7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuz9IkVH3khtPYo31xu38Fg1I826cREk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45263601119-so2o4ccf065sfobvb18qp8ndepvu1k7g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "45263601119-8mcmajecilcfol0amnqdt3lgsad4ecch.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.utils.moodtracker",
+                "app_store_id": "1632137867"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

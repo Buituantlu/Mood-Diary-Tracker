@@ -1,0 +1,10 @@
+{
+    "android": {
+        "Staging" : "9GEHS3SxEP6cCHRrfiioOTN4PbLwUBEKoEy7P",
+        "Production": "UbEvust07oycIaLes4-VQSAAZEVn4UR05-jvg"
+    },
+    "ios": {
+        "Staging": "FDCJhZDbC7PyWLkw_Mb27pwX9EXNr7tJhfMt9",
+        "Production": "krYVdiwOtrUi6TxHeg6kbt_KCGSlkxxnze7o0"
+    }
+}
