@@ -1,80 +1,81 @@
+import firestore from '@react-native-firebase/firestore';
 import {makeAutoObservable} from 'mobx';
-import {MoodType} from '../type/mood';
+import {getUniqueId} from 'react-native-device-info';
+import ArrMoods from '../../assets/json/en/moods.json';
 import * as commonFn from '../../shared/ui/containers/calender/commonFn';
-import AppStyle from '../ui/styles/app.style';
 import {
+  BG_DARK_DEAD,
+  BG_DARK_HAPPY,
+  BG_DARK_LAUGHING,
+  BG_DARK_NEUTRAL,
+  BG_DARK_SAD,
+  IC_ACCOMPLISHED,
+  IC_ANNIVERSARY,
+  IC_BAD_FOOD,
   IC_BASE_AWFUL,
   IC_BASE_BAD,
-  IC_BASE_RAD,
   IC_BASE_GOOD,
   IC_BASE_MEH,
-  BG_DARK_DEAD,
-  BG_DARK_SAD,
-  BG_DARK_HAPPY,
-  BG_DARK_NEUTRAL,
-  BG_DARK_LAUGHING,
-  IC_ADD,
-  IC_SEE_DOCTOR,
-  IC_RISE_SHINE,
-  IC_GOT_SICK,
-  IC_FAMILY_TIME,
-  IC_HAVE_DATE,
-  IC_PARTY_PARTY,
-  IC_FEEL_LONELY,
-  IC_HEARTBROKEN,
-  IC_DATE_GONE_WRONG,
-  IC_NO_PARTY,
-  IC_ACCOMPLISHED,
-  IC_TASKS_DONE,
-  IC_MEET_DEADLINE,
-  IC_PASSED,
-  IC_USELESS_DAY,
-  IC_ANNIVERSARY,
-  IC_HAPPY_ANNIVERSARY,
-  IC_GOT_INTO_ACCIDENT,
-  IC_LACK_OF_SLEEP,
-  IC_NOTHING_TO_DO,
-  IC_BAD_FOOD,
-  IC_SMALL_INJURY,
-  IC_GET_LOST,
-  IC_MONEY_SPENT,
-  IC_LOOSE_GAME,
-  IC_PLAN_CANCELED,
+  IC_BASE_RAD,
   IC_BORING_BOOK,
   IC_BORING_TRIP,
-  IC_NO_EXERCISE,
-  IC_GO_AS_PLANNED,
-  IC_GOOD_SLEEP,
-  IC_NEW_HOBBY,
-  IC_GOOD_READING,
-  IC_GOOD_MEAL,
-  IC_SAFE_TRIP,
-  IC_WONDERFUL_TRIP,
-  IC_TRAVELING,
-  IC_FREE_DAY,
-  IC_SHOPPING,
-  IC_WIN_GAME,
-  IC_EXERCISE,
-  IC_WORK_OVERTIME,
-  IC_NOT_PASSED,
   IC_BUSY_DAY,
+  IC_DATE_GONE_WRONG,
+  IC_EXERCISE,
+  IC_FAMILY_TIME,
+  IC_FEEL_LONELY,
+  IC_FREE_DAY,
+  IC_GET_LOST,
+  IC_GOOD_MEAL,
+  IC_GOOD_READING,
+  IC_GOOD_SLEEP,
+  IC_GOT_INTO_ACCIDENT,
+  IC_GOT_SICK,
+  IC_GO_AS_PLANNED,
+  IC_HAPPY_ANNIVERSARY,
+  IC_HAVE_DATE,
+  IC_HEARTBROKEN,
+  IC_LACK_OF_SLEEP,
+  IC_LOOSE_GAME,
+  IC_MEET_DEADLINE,
   IC_MISSED_DEADLINE,
+  IC_MONEY_SPENT,
+  IC_NEW_HOBBY,
+  IC_NOTHING_TO_DO,
+  IC_NOT_PASSED,
+  IC_NO_EXERCISE,
+  IC_NO_PARTY,
+  IC_PARTY_PARTY,
+  IC_PASSED,
+  IC_PLAN_CANCELED,
+  IC_RISE_SHINE,
+  IC_SAFE_TRIP,
+  IC_SEE_DOCTOR,
+  IC_SHOPPING,
+  IC_SMALL_INJURY,
+  IC_TASKS_DONE,
+  IC_TRAVELING,
+  IC_USELESS_DAY,
+  IC_WIN_GAME,
+  IC_WONDERFUL_TRIP,
+  IC_WORK_OVERTIME,
 } from '../../utils/icons';
-import {ActivityType, ActivityObject} from '../type/activiti';
-import ArrMoods from '../../assets/json/en/moods.json';
-import ArrActivities from '../../assets/json/en/activities.json';
-import {getObjectDataLocal, saveObjectDataLocal} from '../../services/storage';
+import {ActivityObject, ActivityType} from '../type/activiti';
+import {MoodType} from '../type/mood';
+import AppStyle from '../ui/styles/app.style';
 
 export const SAVE_MOODS = 'SAVE_MOODS';
-import firestore from '@react-native-firebase/firestore';
+export const ID_DEVICE = 'ID_DEVICE';
 
 export default class MoodStore {
   dataMoods: Array<MoodType> = ArrMoods; // init array for moods (const);
   arrMoods: Array<MoodType> = [];
+  idDevice: string = '';
   arrActivitiesObject: Array<ActivityObject> = [];
   arrActivitiesFollowMood: Array<ActivityType> = [];
   arrMoodsFollowMonth: Array<{data: Array<MoodType>; time: string}> = [];
   isSelect: number = 0;
+  isModalAddIcon: boolean = false;
   arrMoodDay: Array<MoodType> = [];
   arrImage: Array<string> = [];
   curMood: Array<MoodType> = [];
@@ -86,17 +87,41 @@ export default class MoodStore {
   }
 
   async getArrMoods() {
-    let checkMood = await getObjectDataLocal(SAVE_MOODS);
-    if (checkMood) {
-      this.arrMoods = checkMood;
+    // let checkMood = await getObjectDataLocal(SAVE_MOODS);
+    // if (checkMood) {
+    //   this.arrMoods = checkMood;
+    // }
+    let result = await getUniqueId();
+    if (result) {
+      this.idDevice = `${result}`;
     }
-    firestore().collection('MoodStore').onSnapshot(this.onResult, this.onError);
+    firestore()
+      .collection(`${this.idDevice}`)
+      .onSnapshot(QuerySnapshot => {
+        let result = QuerySnapshot._docs;
+        let arrMoodF = [];
+        if (result) {
+          result.map(item => {
+            arrMoodF.unshift(item._data);
+          });
+        }
+        this.arrMoods = arrMoodF;
+        console.log('tuaannnnStore', this.arrMoods.length);
+      }, this.onError);
   }
 
-  onResult(QuerySnapshot) {
-    console.log('Got Users collection result.', QuerySnapshot);
-    // this.arrMoods = checkMood;
-  }
+  // onResult(QuerySnapshot) {
+  //   console.log('Got Users collection result.', QuerySnapshot._docs);
+  //   let result = QuerySnapshot._docs;
+  //   let arrMoodF = [];
+  //   if (result) {
+  //     result.map(item => {
+  //       arrMoodF.unshift(item._data);
+  //     });
+  //   }
+  //   this.arrMoods = arrMoodF;
+  //   console.log('tuaannnnStore', this.arrMoods.length);
+  // }
 
   onError(error) {
     console.log('looi neeee', error);
@@ -116,6 +141,10 @@ export default class MoodStore {
         this.Average[index].data.push(findMoodMax);
       }
     });
+  }
+
+  hideShowModalAddIcon(bool: boolean) {
+    this.isModalAddIcon = bool;
   }
 
   removeArrAverage() {
@@ -226,7 +255,14 @@ export default class MoodStore {
   }
 
   createMood(mood: any) {
-    this.arrMoods.unshift(mood);
+    firestore()
+      .collection(`${this.idDevice}`)
+      .doc(`${mood.id}`)
+      .set(mood)
+      .then(() => {
+        console.log('Mood added!');
+      });
+    // this.arrMoods.unshift(mood);
   }
 
   removeMood(id: number) {

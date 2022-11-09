@@ -16,7 +16,11 @@ interface ItemActivitiesProps {
 const ItemActivities = observer(
   ({item, moodStore, isEdit, mood, uiStore}: ItemActivitiesProps) => {
     const [isSelect, setIsSelect] = useState(false);
+
     const onClick = () => {
+      if (item.id === 1) {
+        moodStore.hideShowModalAddIcon(true);
+      }
       if (isSelect === false) {
         moodStore.setArrActivitiesObject({
           id: item.id,

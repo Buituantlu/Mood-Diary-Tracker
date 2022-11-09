@@ -1,5 +1,5 @@
 import {Image, View} from 'react-native';
-import React from 'react';
+import React, {useEffect} from 'react';
 import BaseHeader from '../../../shared/ui/containers/base_header';
 import {
   IC_NAVIGATION_CALENDAR,

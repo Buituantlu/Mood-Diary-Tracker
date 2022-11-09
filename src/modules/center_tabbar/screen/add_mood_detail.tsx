@@ -39,6 +39,8 @@ import CalendarStore from '../../calendar/store/calendar_store';
 import PageActivities from '../component/page_activities';
 import styles from './styles';
 import {saveObjectDataLocal} from '../../../services/storage';
+import firestore from '@react-native-firebase/firestore';
+import AddIcon from '../../../shared/ui/containers/add_icon';
 
 interface AddMoodDetailProps {
   calendarStore: CalendarStore;
@@ -187,18 +189,22 @@ const AddMoodDetail = observer(
       if (route.params?.isEdit) {
         moodStore.arrMoods.forEach((e, idx) => {
           if (e.id == route.params?.mood.id) {
-            let moodNew = {
-              ...e,
-              id: e.id,
-              activitiesObj: [...moodStore.arrActivitiesObject],
-              image: [...moodStore.arrImage],
-              inputName: moodStore.getNameFollowId(moodStore.isSelect - 1),
-              moodType: moodStore.getTypeFollowId(moodStore.isSelect - 1),
-              description: text.length > 0 && text,
-              createTime: new Date(date).getTime(),
-            };
-            moodStore.arrMoods.splice(idx, 1, moodNew);
-            moodStore.setCurMood(moodNew);
+            firestore()
+              .collection(`${moodStore.idDevice}`)
+              .doc(`${route.params?.mood.id}`)
+              .update({
+                ...e,
+                id: e.id,
+                activitiesObj: [...moodStore.arrActivitiesObject],
+                image: [...moodStore.arrImage],
+                inputName: moodStore.getNameFollowId(moodStore.isSelect - 1),
+                moodType: moodStore.getTypeFollowId(moodStore.isSelect - 1),
+                description: text.length > 0 && text,
+                createTime: new Date(date).getTime(),
+              })
+              .then(() => {
+                console.log('User updated!');
+              });
             moodStore.resetArrImg();
             navigation.navigate('EditMoodScreen', {
               mood: moodStore.curMood,
@@ -206,15 +212,22 @@ const AddMoodDetail = observer(
           }
         });
       } else {
-        moodStore.createMood({
-          id: new Date().getTime(),
-          inputName: moodStore.getNameFollowType(route.params.moodType),
-          moodType: route.params.moodType,
-          image: [...moodStore.arrImage],
-          description: text.length > 0 && text,
-          activitiesObj: [...moodStore.arrActivitiesObject],
-          createTime: route.params.createTimeMood,
-        });
+        let time = new Date().getTime();
+        firestore()
+          .collection(`${moodStore.idDevice}`)
+          .doc(`${time}`)
+          .set({
+            id: time,
+            inputName: moodStore.getNameFollowType(route.params.moodType),
+            moodType: route.params.moodType,
+            image: [...moodStore.arrImage],
+            description: text.length > 0 && text,
+            activitiesObj: [...moodStore.arrActivitiesObject],
+            createTime: route.params.createTimeMood,
+          })
+          .then(() => {
+            console.log('Mood added!');
+          });
         const arrMods = moodStore.getMoodsFollowDate(
           route.params.createTimeMood,
         );
@@ -444,6 +457,7 @@ const AddMoodDetail = observer(
                 setOpenModal={setOpenModal}
               />
             } */}
+            <AddIcon moodStore={moodStore} uiStore={uiStore} />
           </View>
         </ScrollView>
       </KeyboardAwareScrollView>

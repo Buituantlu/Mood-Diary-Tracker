@@ -31,6 +31,7 @@ import Lightbox from 'react-native-lightbox-v2';
 import ActionSheet from 'react-native-actionsheet';
 import i18n from '../../../utils/i18n';
 import FastImage from 'react-native-fast-image';
+import firestore from '@react-native-firebase/firestore';
 
 interface EditMoodScreenProps {
   route: any;
@@ -48,7 +49,7 @@ const EditMoodScreen = observer(
     moodStore,
     uiStore,
   }: EditMoodScreenProps) => {
-    let actionSheet = useRef();
+    let actionSheet = useRef<any>();
     let optionDelete = ['Cancel', 'Delete'];
     const [height, setHeight] = useState(0);
     const checkActiviti = () => {
@@ -288,7 +289,14 @@ const EditMoodScreen = observer(
           cancelButtonIndex={0}
           onPress={index => {
             if (index == 1) {
-              moodStore.removeMood(route.params.mood.id);
+              firestore()
+                .collection(`${moodStore.idDevice}`)
+                .doc(`${route.params.mood.id}`)
+                .delete()
+                .then(() => {
+                  console.log('User deleted!');
+                });
+              // moodStore.removeMood(route.params.mood.id);
               const arrMods = moodStore.getMoodsFollowDate(
                 route.params?.mood?.createTimeMood,
               );

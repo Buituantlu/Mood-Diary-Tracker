@@ -123,7 +123,6 @@ const App: React.FC<AppProps> = observer(() => {
   const [userStore] = useState(() => new UserStore());
   const [moodStore] = useState(() => new MoodStore());
   const [calendarStore] = useState(() => new CalendarStore());
-  console.log('ga');
 
   const [upToDate, setUpToDate] = useState(true);
   const [codepushError, setCodepushError] = useState(false);

@@ -40,6 +40,7 @@ import {
 import CalendarStore from '../../calendar/store/calendar_store';
 import * as CommonFn from '../../../shared/ui/containers/calender/commonFn';
 import i18n from '../../../utils/i18n';
+import firestore from '@react-native-firebase/firestore';
 
 interface CenterTabbarScreenProps {
   uiStore: UIStore;
@@ -182,12 +183,19 @@ const CenterTabbarScreen = observer(
     };
 
     const onSave = () => {
-      moodStore.createMood({
-        id: new Date().getTime(),
-        inputName: getNameFollowColor(bgColor),
-        moodType: getBgMood(bgColor),
-        createTime: date.getTime(),
-      });
+      let time = new Date().getTime();
+      firestore()
+        .collection(`${moodStore.idDevice}`)
+        .doc(`${time}`)
+        .set({
+          id: time,
+          inputName: getNameFollowColor(bgColor),
+          moodType: getBgMood(bgColor),
+          createTime: date.getTime(),
+        })
+        .then(() => {
+          console.log('Mood added!');
+        });
       const arrMods = moodStore.getMoodsFollowDate(
         route?.params?.createTimeMood ? route.params.createTimeMood : date,
       );
