@@ -358,6 +358,9 @@ const AddMoodDetail = observer(
                 }
               />
             </View>
+            <View style={{paddingHorizontal: 16, marginBottom: 8}}>
+              <Text style={styles.txtDoing}>Chi tiêu</Text>
+            </View>
             <View
               style={[
                 styles.containerInput,
@@ -389,7 +392,7 @@ const AddMoodDetail = observer(
                   },
                 ]}
                 defaultValue={text}
-                placeholder={i18n.t('note')}
+                placeholder={i18n.t('Số tiền')}
                 placeholderTextColor={
                   uiStore.bgMode == 'dark'
                     ? AppStyle.MoreColors.ThumbDeactived

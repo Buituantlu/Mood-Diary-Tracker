@@ -1,0 +1,13 @@
+current directory: /Users/buituan/Pictures/mood-diary-tracker/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+/Users/buituan/.rvm/rubies/ruby-2.7.4/bin/ruby -I /Users/buituan/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20221201-10227-t7s3ox.rb extconf.rb
+creating Makefile
+
+current directory: /Users/buituan/Pictures/mood-diary-tracker/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/buituan/Pictures/mood-diary-tracker/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/buituan/Pictures/mood-diary-tracker/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+make "DESTDIR=" install

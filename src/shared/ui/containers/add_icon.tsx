@@ -35,11 +35,26 @@ const AddIcon = observer(({moodStore, uiStore}: AddIconProps) => {
   const [loading, setLoading] = useState(false);
   const [getApi, setGetApi] = useState(false);
   const [data, setData] = useState<Array<any>>([]);
+  const [hasScrolled, setHasScrolled] = useState(false);
+  const [isLoadingLoadMore, setIsLoadingLoadMore] = useState(false);
   const onBack = () => {
     moodStore.hideShowModalAddIcon(false);
   };
   const onClick = () => {
     moodStore.hideShowModalAddIcon(false);
+  };
+
+  const handleLoadMore = () => {
+    // console.log(
+    //   '!hasScrolled || isLoadingLoadMore',
+    //   !hasScrolled,
+    //   isLoadingLoadMore,
+    // );
+    if (!hasScrolled || isLoadingLoadMore) {
+      return null;
+    }
+    setIsLoadingLoadMore(true);
+    //call api
   };
 
   const onSearch = () => {
@@ -68,8 +83,9 @@ const AddIcon = observer(({moodStore, uiStore}: AddIconProps) => {
       });
   };
 
-  const onClickItem = index => {
+  const onClickItem = (item, index) => {
     setIndexItem(index);
+    console.log(item);
   };
 
   const loadMoreData = () => {
@@ -165,6 +181,9 @@ const AddIcon = observer(({moodStore, uiStore}: AddIconProps) => {
                 <FlatList
                   data={data}
                   numColumns={4}
+                  onScroll={() => {
+                    setHasScrolled(true);
+                  }}
                   contentContainerStyle={{paddingBottom: heightFooter}}
                   showsVerticalScrollIndicator={false}
                   keyExtractor={item => item.id}
@@ -173,7 +192,7 @@ const AddIcon = observer(({moodStore, uiStore}: AddIconProps) => {
                   renderItem={({item, index}) => {
                     return (
                       <TouchableOpacity
-                        onPress={() => onClickItem(index)}
+                        onPress={() => onClickItem(item, index)}
                         style={[
                           styles.btnIcon,
                           index === indexItem
