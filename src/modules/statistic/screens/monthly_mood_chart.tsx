@@ -26,7 +26,6 @@ interface MonthLyMoodChartProps {
 
 const MonthLyMoodChart = observer(
   ({moodStore, calendarStore, uiStore}: MonthLyMoodChartProps) => {
-    console.log('nam123: ', toJS(moodStore.MonthLy));
     const DashedLine = ({image}) => {
       return (
         <View style={styles.containerMood}>
